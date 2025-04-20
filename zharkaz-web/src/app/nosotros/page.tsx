@@ -1,5 +1,3 @@
-import React from "react";
-
 import Navbar from "@/components/Navbar";
 import ContactFloating from "@/components/ContactFloating";
 import Footer from '@/components/Footer';
@@ -36,7 +34,7 @@ export default function NosotrosPage() {
               Impulsar la transformación digital de las empresas mediante soluciones tecnológicas eficientes, escalables y confiables.
             </p>
             {/* Agregar imagen ilustrativa o icono relacionado */}
-            <Image src="/images/mision.jpg" alt="Nuestra misión" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>
+            <Image src="/images/mision.jpg" alt="Nuestra misión" width={800} height={400}className="rounded-xl shadow-md mx-auto my-6"/>
           </div>
 
           {/* Visión */}
@@ -61,7 +59,7 @@ export default function NosotrosPage() {
             </ul>
             {/* Se puede añadir alguna imagen visual o gráfico que destaque estos valores */}
             <div className="mt-4">
-            <Image src="/images/valores.jpg" alt="Nuestros valores" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>
+            <Image src="/images/valores.jpeg" alt="Nuestros valores" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>
             </div>
           </div>
         </section>
