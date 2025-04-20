@@ -1,13 +1,13 @@
 import Navbar from "@/components/Navbar";
 import ContactFloating from "@/components/ContactFloating";
 import Footer from '@/components/Footer';
-import Image from "next/image"; // Si quieres añadir alguna imagen
+import Image from "next/image";
 
 export const metadata = {
   title: "Nosotros | Zharkaz",
   description: "Conoce más sobre Zharkaz, nuestra misión, visión y valores.",
   keywords: "Zharkaz, soluciones tecnológicas, misión, visión, valores, innovación, calidad",
-  robots: "index, follow", // Asegúrate de que los motores de búsqueda indexen esta página
+  robots: "index, follow",
 };
 
 export default function NosotrosPage() {
@@ -26,18 +26,13 @@ export default function NosotrosPage() {
           <p>
             Con años de experiencia en el sector, brindamos servicios como desarrollo de software, soluciones empresariales, soporte técnico, y más, ajustados a las necesidades específicas de cada cliente.
           </p>
-
-          {/* Misión */}
           <div>
             <h2 className="text-2xl font-semibold mt-8 mb-2">Nuestra Misión</h2>
             <p>
               Impulsar la transformación digital de las empresas mediante soluciones tecnológicas eficientes, escalables y confiables.
             </p>
-            {/* Agregar imagen ilustrativa o icono relacionado */}
             <Image src="/images/mision.jpg" alt="Nuestra misión" width={800} height={400}className="rounded-xl shadow-md mx-auto my-6"/>
           </div>
-
-          {/* Visión */}
           <div>
             <h2 className="text-2xl font-semibold mt-8 mb-2">Nuestra Visión</h2>
             <p>
@@ -46,8 +41,6 @@ export default function NosotrosPage() {
             <div className="mt-4">
             <Image src="/images/vision.jpg" alt="Nuestra visión" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>            </div>
           </div>
-
-          {/* Valores */}
           <div>
             <h2 className="text-2xl font-semibold mt-8 mb-2">Nuestros Valores</h2>
             <ul className="list-disc list-inside space-y-2">
@@ -57,15 +50,12 @@ export default function NosotrosPage() {
               <li>Ética profesional</li>
               <li>Trabajo en equipo</li>
             </ul>
-            {/* Se puede añadir alguna imagen visual o gráfico que destaque estos valores */}
             <div className="mt-4">
             <Image src="/images/valores.jpeg" alt="Nuestros valores" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>
             </div>
           </div>
         </section>
       </div>
-      
-      {/* Footer */}
       <Footer />
       <ContactFloating />
     </main>

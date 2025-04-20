@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <main className="bg-gray-50 text-gray-900 min-h-screen">
       <Navbar />
-
       <div className="pt-20">
-        {/* Hero Section */}
         <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-4 py-20 bg-gradient-to-b from-blue-50 to-white max-w-7xl mx-auto">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-5xl font-bold text-blue-700 leading-tight">
@@ -34,8 +32,6 @@ export default function Home() {
             />
           </div>
         </section>
-
-        {/* Servicios destacados */}
         <section className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-blue-700 mb-10">
@@ -55,8 +51,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Por qué elegirnos */}
         <section className="py-16 px-4 bg-blue-50">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-blue-700 mb-10">¿Por qué elegir Zharkaz?</h2>
@@ -69,19 +63,15 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* CTA Final */}
         <section className="py-16 px-4 text-center bg-gradient-to-t from-blue-50 to-white">
           <h2 className="text-3xl font-bold text-blue-700">¿Listo para comenzar?</h2>
           <p className="mt-4 text-gray-700">Conversemos sobre cómo llevar tu negocio al siguiente nivel.</p>
           <p className="mt-6 text-gray-600 text-base">
-  ¿Tienes preguntas? <span className="text-blue-700 font-medium">Contáctanos 📩</span>
-</p>
+            ¿Tienes preguntas? <span className="text-blue-700 font-medium">Contáctanos 📩</span>
+          </p>
         </section>
-
         <Footer />
       </div>
-
       <ContactFloating />
     </main>
   );

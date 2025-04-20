@@ -21,15 +21,12 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-10 pb-6 relative">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Logo + descripción */}
         <div>
           <h3 className="text-white text-2xl font-bold">Zharkaz</h3>
           <p className="mt-2 text-sm">
             Soluciones digitales, soporte técnico, redes y marketing para tu negocio en Costa Rica.
           </p>
         </div>
-
-        {/* Navegación */}
         <div>
           <h4 className="text-white font-semibold mb-2">Navegación</h4>
           <ul className="space-y-1 text-sm">
@@ -38,8 +35,6 @@ export default function Footer() {
             <li><a href="/politica-privacidad" className="hover:text-white">Política de privacidad</a></li>
           </ul>
         </div>
-
-        {/* Contacto y redes */}
         <div>
           <h4 className="text-white font-semibold mb-2">Contacto</h4>
           <ul className="text-sm space-y-1">
@@ -50,13 +45,9 @@ export default function Footer() {
           <SocialLinks />
         </div>
       </div>
-
-      {/* Línea inferior */}
       <div className="text-center text-sm text-gray-500 mt-10">
         <p>&copy; {new Date().getFullYear()} Zharkaz. Todos los derechos reservados.</p>
       </div>
-
-      {/* Botón ir arriba */}
       {showTopButton && (
         <button
           onClick={scrollToTop}

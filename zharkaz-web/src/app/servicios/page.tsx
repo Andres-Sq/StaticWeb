@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ContactFloating from "@/components/ContactFloating";
 import Footer from '@/components/Footer';
-import Image from "next/image"; // Importa el componente Image de Next.js
+import Image from "next/image";
 
 export default function ServiciosPage() {
   return (
@@ -9,15 +9,12 @@ export default function ServiciosPage() {
       <Navbar />
 
       <div className="pt-20">
-        {/* Hero Section */}
         <section className="text-center py-20 px-4 bg-gradient-to-b from-blue-50 to-white">
           <h1 className="text-4xl font-bold text-blue-700">Nuestros Servicios</h1>
           <p className="mt-4 text-lg text-gray-700">
             Conoce cómo podemos ayudarte a mejorar tu negocio con soluciones digitales innovadoras.
           </p>
         </section>
-
-        {/* Servicios Section */}
         <section id="servicios" className="py-16 px-4 w-full bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-semibold text-center text-blue-700 mb-8">
@@ -28,27 +25,27 @@ export default function ServiciosPage() {
                 {
                   title: "💻 Desarrollo de aplicaciones",
                   desc: "Creamos aplicaciones eficientes y escalables, adaptadas a las necesidades de tu negocio.",
-                  imgSrc: "/images/desarrollo-aplicaciones.png", // Imagen de ejemplo
+                  imgSrc: "/images/desarrollo-aplicaciones.png",
                 },
                 {
                   title: "🌐 Desarrollo de páginas web",
                   desc: "Diseñamos sitios web rápidos, atractivos y enfocados en la conversión de usuarios.",
-                  imgSrc: "/images/desarrollo-web.png", // Imagen de ejemplo
+                  imgSrc: "/images/desarrollo-web.png",
                 },
                 {
                   title: "🛠️ Soporte técnico general",
                   desc: "Ofrecemos diagnóstico, mantenimiento y reparación de sistemas para mantener tu negocio funcionando.",
-                  imgSrc: "/images/soporte-tecnico.png", // Imagen de ejemplo
+                  imgSrc: "/images/soporte-tecnico.png",
                 },
                 {
                   title: "📡 Redes y conectividad",
                   desc: "Instalamos y configuramos redes empresariales, asegurando la conectividad y seguridad de tu infraestructura.",
-                  imgSrc: "/images/redes-conectividad.png", // Imagen de ejemplo
+                  imgSrc: "/images/redes-conectividad.png",
                 },
                 {
                   title: "📱 Marketing digital",
                   desc: "Desarrollamos estrategias de marketing online para aumentar tu alcance y atraer más clientes.",
-                  imgSrc: "/images/marketing-digital.png", // Imagen de ejemplo
+                  imgSrc: "/images/marketing-digital.png",
                 },
               ].map(({ title, desc, imgSrc }, i) => (
                 <div key={i} className="bg-blue-50 p-6 rounded-xl shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg">
@@ -58,7 +55,7 @@ export default function ServiciosPage() {
                     width={96} 
                     height={96} 
                     className="mb-4" 
-                    priority // Cargar de forma prioritaria para optimizar LCP
+                    priority
                     sizes="(max-width: 640px) 80px, (max-width: 1024px) 96px, 120px"
                   />
                   <h3 className="text-xl font-semibold text-blue-700">{title}</h3>
@@ -72,11 +69,8 @@ export default function ServiciosPage() {
             </div>
           </div>
         </section>
-
-        {/* Footer */}
         <Footer />
       </div>
-
       <ContactFloating />
     </main>
   );
