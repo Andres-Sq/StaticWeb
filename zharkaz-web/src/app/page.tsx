@@ -40,7 +40,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[ 
                 ["💻 Apps Personalizadas", "Creamos sistemas adaptados a tu negocio."],
-                ["🌐 Sitios Web Modernos", "Diseños impactantes y optimizados para SEO."],
+                ["🌐 Sitios Web Profesionales", "Diseño innovador, experiencia de usuario superior y optimización SEO."],
                 ["📡 Redes y conectividad", "Soluciones de conectividad segura y eficiente."]
               ].map(([title, desc], i) => (
                 <div key={i} className="bg-blue-50 p-6 rounded-xl shadow-md text-center">
