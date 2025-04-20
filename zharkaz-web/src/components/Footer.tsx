@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import SocialLinks from './SocialLinks';
 
 export default function Footer() {
   const [showTopButton, setShowTopButton] = useState(false);
@@ -46,11 +47,7 @@ export default function Footer() {
             <li>🌐 <a href="https://zharkaz.com" className="hover:text-white">www.zharkaz.com</a></li>
             <li>📍 San José, Costa Rica</li>
           </ul>
-          <div className="flex space-x-4 mt-3">
-            <a href="https://www.facebook.com/zharkaz" target="_blank" aria-label="Facebook" className="hover:text-white">📘</a>
-            <a href="https://www.instagram.com/zharkaz" target="_blank" aria-label="Instagram" className="hover:text-white">📸</a>
-            <a href="https://www.linkedin.com/company/zharkaz" target="_blank" aria-label="LinkedIn" className="hover:text-white">🔗</a>
-          </div>
+          <SocialLinks />
         </div>
       </div>
 

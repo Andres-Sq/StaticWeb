@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'; // Importa Link de Next.js
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,9 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          <a href="#inicio" className="hover:text-blue-700">Inicio</a>
-          <a href="#Nosotros" className="hover:text-blue-700">Nosotros</a>
-          <a href="#servicios" className="hover:text-blue-700">Servicios</a>
+          <Link href="/" className="hover:text-blue-700">Inicio</Link>
+          <Link href="/nosotros" className="hover:text-blue-700">Nosotros</Link>
+          <Link href="/servicios" className="hover:text-blue-700">Servicios</Link>
         </nav>
 
         {/* Mobile toggle */}
@@ -41,13 +42,11 @@ export default function Navbar() {
 
       {/* Mobile nav */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="bg-white px-4 pt-2 pb-4 space-y-2 text-gray-700 font-medium">
-          <a href="#servicios" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Servicios</a>
-          <a href="#contacto" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Contacto</a>
+          <Link href="#servicios" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Servicios</Link>
+          <Link href="#contacto" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Contacto</Link>
         </div>
       </div>
     </header>

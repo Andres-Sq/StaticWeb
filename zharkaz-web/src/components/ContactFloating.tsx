@@ -1,16 +1,27 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useEffect } from 'react';
+import { useContactForm } from '@/hooks/useContactForm';
 
 export default function ContactFloatingForm() {
   const [isOpen, setIsOpen] = useState(false);
-  const [formStatus, setFormStatus] = useState('');
-  const formRef = useRef<HTMLFormElement | null>(null);
+  const [isSent, setIsSent] = useState(false);
+
+  const {
+    formRef,
+    handleSubmit,
+    resetForm,
+  } = useContactForm(() => {
+    setIsSent(true);
+    setTimeout(() => {
+      setIsSent(false);
+      handleClose();
+    }, 2500);
+  });
 
   const handleClose = () => {
     setIsOpen(false);
-    setFormStatus('');
-    formRef.current?.reset();
+    resetForm();
   };
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -19,23 +30,13 @@ export default function ContactFloatingForm() {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    const res = await fetch('https://formsubmit.co/YOUR_EMAIL@zharkaz.com', {
-      method: 'POST',
-      body: formData,
-    });
-
-    if (res.ok) {
-      setFormStatus('✅ ¡Mensaje enviado con éxito!');
-      form.reset();
-    } else {
-      setFormStatus('❌ Error al enviar. Intenta de nuevo.');
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        document.querySelector<HTMLInputElement>('input[name="name"]')?.focus();
+      }, 100);
     }
-  };
+  }, [isOpen]);
 
   return (
     <>
@@ -49,9 +50,9 @@ export default function ContactFloatingForm() {
       {isOpen && (
         <div
           onClick={handleBackdropClick}
-          className="fixed inset-0 bg-white/20 backdrop-blur-sm z-50 flex items-center justify-center"
+          className="fixed inset-0 bg-white/30 backdrop-blur-sm z-50 flex items-center justify-center"
         >
-          <div className="bg-white/95 rounded-2xl p-6 w-96 shadow-xl relative animate-fade-in-up border border-gray-200">
+          <div className="bg-white rounded-2xl p-6 w-96 shadow-xl relative border border-gray-200 scale-100 transition-transform duration-300 ease-out">
             <button
               className="absolute top-2 right-3 text-gray-600 hover:text-red-500 text-xl"
               onClick={handleClose}
@@ -89,12 +90,19 @@ export default function ContactFloatingForm() {
               />
               <button
                 type="submit"
-                className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition w-full"
+                disabled={isSent}
+                className={`w-full py-2 px-4 rounded text-white transition ${
+                  isSent
+                    ? 'bg-green-600 cursor-default'
+                    : 'bg-blue-700 hover:bg-blue-800'
+                }`}
               >
-                Enviar
+                {isSent ? '¡Enviado!' : 'Enviar'}
               </button>
-              {formStatus && (
-                <p className="mt-3 text-sm text-center text-green-600">{formStatus}</p>
+              {isSent && (
+                <div className="mt-3 text-green-600 text-sm text-center">
+                  ✅ ¡Mensaje enviado correctamente!
+                </div>
               )}
             </form>
           </div>

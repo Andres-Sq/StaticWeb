@@ -14,9 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zharkaz - Soluciones Digitales y Soporte Técnico",
+  title: "Zharkaz - Soluciones Digitales",
   description: "Servicios de desarrollo web, soporte técnico, redes y marketing digital en Costa Rica.",
-};
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+  },
+  };
 
 export default function RootLayout({
   children,

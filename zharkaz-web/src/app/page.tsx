@@ -14,29 +14,11 @@ export default function Home() {
           <p className="mt-4 text-lg text-gray-700">
             Soluciones digitales y soporte técnico para impulsar tu negocio.
           </p>
-        </section>
-
-        {/* Servicios Section */}
-        <section id="servicios" className="py-16 px-4 w-full bg-white">
-          <h2 className="text-3xl font-semibold text-center text-blue-700">Nuestros Servicios</h2>
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              ["💻 Desarrollo de aplicaciones", "Creamos apps eficientes y escalables para tu empresa."],
-              ["🌐 Desarrollo de páginas web", "Sitios modernos, rápidos y enfocados en conversión."],
-              ["🛠️ Soporte técnico general", "Diagnóstico, mantenimiento y reparación de sistemas."],
-              ["📡 Redes y conectividad", "Instalación y configuración de redes empresariales."],
-              ["📱 Marketing digital", "Estrategias online para alcanzar más clientes."],
-            ].map(([title, desc], i) => (
-              <div key={i} className="bg-blue-50 p-6 rounded-xl shadow-md">
-                <h3 className="text-xl font-semibold">{title}</h3>
-                <p className="mt-2 text-gray-600">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        </section>        
         {/* Footer */}
         <Footer />
       </div>
+      {/* Contactanos Button */}
       <ContactFloating />
     </main>
   );
