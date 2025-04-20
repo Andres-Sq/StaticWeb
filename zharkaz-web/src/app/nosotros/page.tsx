@@ -36,14 +36,14 @@ export default function NosotrosPage() {
               Impulsar la transformación digital de las empresas mediante soluciones tecnológicas eficientes, escalables y confiables.
             </p>
             {/* Agregar imagen ilustrativa o icono relacionado */}
-            <Image src="/images/mision.jpg" alt="Nuestra misión" width={800} height={400}className="rounded-xl shadow-md mx-auto my-6"/>
+            <Image src="/images/mision.jpg" alt="Nuestra misión" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>
           </div>
 
           {/* Visión */}
           <div>
             <h2 className="text-2xl font-semibold mt-8 mb-2">Nuestra Visión</h2>
             <p>
-              Ser líderes en soluciones tecnológicas en Latinoamérica, aportando innovación y valor a cada proyecto.
+              Comprometidos con la innovación, trabajamos para ofrecer soluciones tecnológicas que generen valor y crecimiento para cada proyecto en Latinoamérica.
             </p>
             <div className="mt-4">
             <Image src="/images/vision.jpg" alt="Nuestra visión" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>            </div>
