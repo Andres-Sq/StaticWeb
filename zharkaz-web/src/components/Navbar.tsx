@@ -37,9 +37,9 @@ export default function Navbar() {
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="bg-white px-4 pt-2 pb-4 space-y-2 text-gray-700 font-medium">
-          <Link href="/" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Servicios</Link>
+          <Link href="/" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Inicio</Link>
+          <Link href="/nosotros" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Nosotros</Link>
           <Link href="/servicios" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Servicios</Link>
-          <Link href="/contacto" className="block hover:text-blue-700" onClick={() => setIsOpen(false)}>Contacto</Link>
         </div>
       </div>
     </header>
