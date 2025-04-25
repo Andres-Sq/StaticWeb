@@ -2,7 +2,7 @@ const SocialLinks = () => {
     return (
       <div className="flex space-x-4 mt-4">
         <a
-          href="https://www.facebook.com/zharkaz"
+          href="https://www.facebook.com/profile.php?id=61569722927045"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
