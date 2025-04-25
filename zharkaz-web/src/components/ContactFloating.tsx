@@ -42,7 +42,7 @@ export default function ContactFloatingForm() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-5 right-5 z-50 bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition"
+        className="fixed bottom-5 right-5 z-50 bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition cursor-pointer"
       >
         Contáctanos
       </button>
@@ -91,7 +91,7 @@ export default function ContactFloatingForm() {
               <button
                 type="submit"
                 disabled={isSent}
-                className={`w-full py-2 px-4 rounded text-white transition ${
+                className={`w-full py-2 px-4 rounded text-white transition cursor-pointer ${
                   isSent
                     ? 'bg-green-600 cursor-default'
                     : 'bg-blue-700 hover:bg-blue-800'
