@@ -1,9 +1,9 @@
 'use client';
 import { useState, useCallback } from 'react';
 
-export type ModalKey = 'privacy' | 'cons' | null;
+export type ModalKey = 'app' | 'web' | 'soporte' | 'redes' | 'Marketing' | null;
 
-export const useMultiModal = () => {
+export const useModal = () => {
   const [openModal, setOpenModal] = useState<ModalKey>(null);
 
   const open = useCallback((key: ModalKey) => setOpenModal(key), []);
