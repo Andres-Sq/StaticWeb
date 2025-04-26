@@ -1,4 +1,5 @@
 'use client';
+import Head from 'next/head';
 import { useModal } from '@/hooks/useModal';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
@@ -52,6 +53,18 @@ export default function ServiciosPage() {
   };
   return (
     <main className="bg-gray-50 text-gray-900 min-h-screen">
+      <Head>
+        <title>Servicios | Zharkaz</title>
+        <meta
+          name="description"
+          content="Descubre los servicios de desarrollo web, aplicaciones, soporte técnico, redes y marketing digital que ofrece Zharkaz para impulsar tu negocio."
+        />
+        <meta
+          name="keywords"
+          content="desarrollo web, aplicaciones, soporte técnico, redes, marketing digital, Zharkaz"
+        />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <Navbar />
       <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-white text-center">
         <h1 className="text-4xl font-bold text-blue-700">Nuestros Servicios</h1>
@@ -94,6 +107,7 @@ export default function ServiciosPage() {
             <div className="bg-white p-6 rounded-xl max-w-md text-center">
               <h3 className="text-2xl font-bold mb-4">{title}</h3>
               <p className="text-gray-700">{modalContent}</p>
+              {/*<Image src={modalImg} alt={title} width={100} height={100} className="mx-auto mb-4" />*/}
               <button
                 onClick={close}
                 className="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
