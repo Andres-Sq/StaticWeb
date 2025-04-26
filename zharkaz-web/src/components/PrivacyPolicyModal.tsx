@@ -59,7 +59,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
 
           <p>
             <strong>Derechos del usuario:</strong> Tienes derecho a acceder, rectificar o eliminar tus datos personales
-            en cualquier momento. Para ello, puedes contactarnos a través del correo info@zharkaz.com.
+            en cualquier momento. Para ello, puedes contactarnos.
           </p>
 
           <p>
@@ -67,7 +67,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
             revisarla periódicamente.
           </p>
 
-          <p>Última actualización: abril 2025</p>
+          <p>Última actualización: Abril 2025</p>
         </div>
 
         <div className="mt-6 text-right">

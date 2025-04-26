@@ -8,8 +8,7 @@ export function useContactForm(onSuccess?: () => void) {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
-
-    const res = await fetch('https://formsubmit.co/asu0090@zharkaz.com', {
+    const res = await fetch('https://formsubmit.co/asu0090@gmail.com', {
       method: 'POST',
       body: formData,
     });

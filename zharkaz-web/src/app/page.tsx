@@ -67,7 +67,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-blue-700">¿Listo para comenzar?</h2>
           <p className="mt-4 text-gray-700">Conversemos sobre cómo llevar tu negocio al siguiente nivel.</p>
           <p className="mt-6 text-gray-600 text-base">
-            ¿Tienes preguntas? <span className="text-blue-700 font-medium">Contáctanos 📩</span>
+            ¿Tienes preguntas?
           </p>
         </section>
         <Footer />
