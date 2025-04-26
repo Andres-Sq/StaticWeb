@@ -55,7 +55,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-2">Contacto</h4>
             <ul className="text-sm space-y-1">
-              {/*<li>✉️ <a href="mailto:info@zharkaz.com" className="hover:text-white">info@zharkaz.com</a></li>*/}
+              <li>✉️ <a href="mailto:info@zharkaz.com" className="hover:text-white">info@zharkaz.com</a></li>
               <li>🌐 <a href="https://zharkaz.com" className="hover:text-white">www.zharkaz.com</a></li>
               <li>📍 San José, Costa Rica</li>
             </ul>
