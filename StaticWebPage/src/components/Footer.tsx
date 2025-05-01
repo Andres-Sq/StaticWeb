@@ -27,9 +27,9 @@ export default function Footer() {
       <footer className="bg-gray-900 text-gray-300 pt-10 pb-6 relative">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-white text-2xl font-bold">Zharkaz</h3>
+            <h3 className="text-white text-2xl font-bold">TuMarca</h3>
             <p className="mt-2 text-sm">
-              Soluciones digitales, soporte técnico, redes y marketing para tu negocio en Costa Rica.
+              Descripcion.
             </p>
           </div>
           <div>
@@ -55,15 +55,15 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-2">Contacto</h4>
             <ul className="text-sm space-y-1">
-              <li>✉️ <a href="mailto:info@zharkaz.com" className="hover:text-white">info@zharkaz.com</a></li>
-              <li>🌐 <a href="https://zharkaz.com" className="hover:text-white">www.zharkaz.com</a></li>
+              <li>✉️ <a href="mailto:info@TuMarca.com" className="hover:text-white">info@TuMarca.com</a></li>
+              <li>🌐 <a href="https://TuMarca.com" className="hover:text-white">www.TuMarca.com</a></li>
               <li>📍 San José, Costa Rica</li>
             </ul>
             <SocialLinks />
           </div>
         </div>
         <div className="text-center text-sm text-gray-500 mt-10">
-          <p>&copy; {new Date().getFullYear()} Zharkaz. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} TuMarca. Todos los derechos reservados.</p>
         </div>
 
         {showTopButton && (

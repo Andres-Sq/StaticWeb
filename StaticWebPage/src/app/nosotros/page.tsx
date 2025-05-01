@@ -4,9 +4,9 @@ import Footer from '@/components/Footer';
 import Image from "next/image";
 
 export const metadata = {
-  title: "Nosotros | Zharkaz",
-  description: "Conoce más sobre Zharkaz, nuestra misión, visión y valores.",
-  keywords: "Zharkaz, soluciones tecnológicas, misión, visión, valores, innovación, calidad",
+  title: "Nosotros | TuMarca",
+  description: "Desc. TuMarca",
+  keywords: "keywords",
   robots: "index, follow",
 };
 
@@ -16,42 +16,41 @@ export default function NosotrosPage() {
       <Navbar />
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 border-b pb-2 border-gray-200">
-          Sobre Nosotros
+          Nosotros
         </h1>
-        
         <section className="space-y-8 text-lg">
           <p>
-            En <strong>Zharkaz</strong>, nos dedicamos a ofrecer soluciones tecnológicas innovadoras que impulsan el crecimiento de las empresas. Nuestro enfoque está basado en la excelencia, el compromiso y la satisfacción de nuestros clientes.
+            Texto.
           </p>
           <p>
-            Con años de experiencia en el sector, brindamos servicios como desarrollo de software, soluciones empresariales, soporte técnico, y más, ajustados a las necesidades específicas de cada cliente.
+            Texto.
           </p>
           <div>
-            <h2 className="text-2xl font-semibold mt-8 mb-2">Nuestra Misión</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-2">Misión</h2>
             <p>
-              Impulsar la transformación digital de las empresas mediante soluciones tecnológicas eficientes, escalables y confiables.
+              Texto
             </p>
-            <Image src="/images/mision.jpg" alt="Nuestra misión" width={800} height={400}className="rounded-xl shadow-md mx-auto my-6"/>
+            <Image src="/images/" alt="Misión" width={800} height={400}className="rounded-xl shadow-md mx-auto my-6"/>
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mt-8 mb-2">Nuestra Visión</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-2">Visión</h2>
             <p>
-              Comprometidos con la innovación, trabajamos para ofrecer soluciones tecnológicas que generen valor y crecimiento para cada proyecto en Latinoamérica.
+              Texto.
             </p>
             <div className="mt-4">
-            <Image src="/images/vision.jpg" alt="Nuestra visión" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>            </div>
+            <Image src="/images/" alt="Visión" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>            </div>
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mt-8 mb-2">Nuestros Valores</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-2">Valores o Metas</h2>
             <ul className="list-disc list-inside space-y-2">
-              <li>Innovación constante</li>
-              <li>Compromiso con la calidad</li>
-              <li>Orientación al cliente</li>
-              <li>Ética profesional</li>
-              <li>Trabajo en equipo</li>
+              <li>Texto</li>
+              <li>Texto</li>
+              <li>Texto</li>
+              <li>Texto</li>
+              <li>Texto</li>
             </ul>
             <div className="mt-4">
-            <Image src="/images/valores.jpeg" alt="Nuestros valores" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>
+            <Image src="/images/" alt="Valores/Metas" width={800} height={400} className="rounded-xl shadow-md mx-auto my-6"/>
             </div>
           </div>
         </section>

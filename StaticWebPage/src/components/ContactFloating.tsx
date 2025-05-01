@@ -42,9 +42,9 @@ export default function ContactFloatingForm() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-5 right-5 z-50 bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition cursor-pointer"
+        className="fixed bottom-5 right-5 z-50 bg-green-700 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition cursor-pointer"
       >
-        Contáctanos
+        Float Button
       </button>
 
       {isOpen && (
@@ -61,11 +61,11 @@ export default function ContactFloatingForm() {
               &times;
             </button>
 
-            <h2 className="text-lg font-semibold text-blue-700 mb-4">Envíanos un mensaje</h2>
+            <h2 className="text-lg font-semibold text-green-700 mb-4">Texto</h2>
 
             <form onSubmit={handleSubmit} ref={formRef}>
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://zharkaz.com/gracias" />
+              <input type="hidden" name="_next" value="https://TuMarca/gracias" />
 
               <input
                 type="text"
@@ -94,7 +94,7 @@ export default function ContactFloatingForm() {
                 className={`w-full py-2 px-4 rounded text-white transition cursor-pointer ${
                   isSent
                     ? 'bg-green-600 cursor-default'
-                    : 'bg-blue-700 hover:bg-blue-800'
+                    : 'bg-green-700 hover:bg-green-800'
                 }`}
               >
                 {isSent ? '¡Enviado!' : 'Enviar'}

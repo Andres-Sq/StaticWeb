@@ -11,13 +11,13 @@ export default function Navbar() {
     <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2 transition">
-          <Image src="/logo-zharkaz.svg" alt="Zharkaz Logo" width={40} height={40} />
-          <span className="text-xl font-bold text-blue-700">ZHARKAZ</span>
+          <Image src="/logo.jpg" alt="Logo" width={40} height={40} />
+          <span className="text-xl font-bold text-green-700">TuMarca</span>
         </Link>
         <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
-          <Link href="/" className="hover:text-blue-700">Inicio</Link>
-          <Link href="/nosotros" className="hover:text-blue-700">Nosotros</Link>
-          <Link href="/servicios" className="hover:text-blue-700">Servicios</Link>
+          <Link href="/" className="hover:text-green-700">Inicio</Link>
+          <Link href="/nosotros" className="hover:text-green-700">Nosotros</Link>
+          <Link href="/servicios" className="hover:text-green-700">Servicios</Link>
         </nav>
         <button
           onClick={() => setIsOpen(!isOpen)}
